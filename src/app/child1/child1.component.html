@@ -1,0 +1,21 @@
+<div class='table-responsive'>
+    <table class="table mb-0">
+        <thead>
+            <tr>
+
+                <th>Year</th>
+                <th>Month</th>
+                <th>Price</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let child1 of child1Data'>
+                <td>{{ child1.year }}</td>
+                <td>{{ child1.month }}</td>
+                <td>{{ child1.price | currency:'USD':'symbol':'1.2-2'}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
